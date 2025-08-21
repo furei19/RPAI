@@ -1,0 +1,56 @@
+1. Make sure Python & venv are installed
+
+Most Raspberry Pi OS versions have Python preinstalled. Check with:
+
+python3 --version
+
+
+If you don’t have venv, install it:
+
+sudo apt-get update
+sudo apt-get install python3-venv -y
+
+2. Create a virtual environment
+
+Inside your project folder (where your Teachable Machine .py file is):
+
+python3 -m venv venv
+
+
+Activate it:
+
+source venv/bin/activate
+
+
+You should now see (venv) before your prompt.
+
+3. Install dependencies
+
+Teachable Machine exports usually need TensorFlow Lite or TensorFlow. On Raspberry Pi, TensorFlow Lite is lighter and works better.
+
+Install pip & upgrade:
+
+pip install --upgrade pip
+
+
+Then install the libraries you need (depending on your export type):
+
+For image classification:
+
+pip install numpy pillow tflite-runtime
+
+
+For audio classification:
+
+pip install numpy sounddevice tflite-runtime
+
+
+For pose detection / advanced models (may require full TensorFlow, but it’s heavy on Pi):
+
+pip install tensorflow
+
+4. Run your Teachable Machine Python file
+
+If your export is named tm_model.py, run:
+
+python tm_model.py
