@@ -1,0 +1,20 @@
+Download Raspberry Pi imager from 
+
+https://www.raspberrypi.com/software
+
+Boot Micro SD to Raspberry Pi and finish setup
+Enable SSH configuration with
+
+sudo systemctl enable ssh
+
+REBOOT RASPBERRY PI
+
+Connect to raspberry Pi via PuTTY
+
+Create files from your computer to Raspberry Pi using
+
+nano <filename>
+
+Run script with
+
+python <script.py>
