@@ -3,6 +3,8 @@
 ## 🚧 Status  
 Currently **under construction** 🚧 — being enhanced with new AI features and expanded functionality.  
 
+# 📋 Project Overview
+
 A **2-wheel drive robot** powered by a Raspberry Pi 🥧 with **AI integration** ⚡.  
 Equipped with:  
 - 📷 Camera → Recognizes **hand signals** for control  
