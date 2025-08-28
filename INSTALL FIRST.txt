@@ -1,0 +1,7 @@
+open environment
+
+source ~/tf39-env/bin/activate
+
+
+pip install RPi GPIO
+pip install opencv-python
